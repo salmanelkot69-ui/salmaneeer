@@ -1,229 +1,281 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #121212;
-    color: #fff;
-    line-height: 1.6;
+    font-family: "Poppins", sans-serif;
 }
-
-/* Navigation */
-nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    padding: 20px;
-    list-style: none;
-    background-color: rgba(0, 0, 0, 0.7);
+html {
+  scroll-behavior: smooth;
 }
+h1,h2,h3,h4,h5,h6{
+  font-family: "Montserrat", serif;
 
-nav ul li a {
-    color: #fff;
+}
+a{
     text-decoration: none;
-    font-weight: bold;
-    padding: 8px 16px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+
+}
+
+/* start section Home  */
+#home {
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),   /* درجة التعتيم */
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('../images/developer-coding-in-php.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: end;
+  gap: 100px;
+  padding: 20px;
+  list-style: none;
+}
+nav ul li a {
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #ff9800;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+.welcome_head {
+  display: flex;
+  flex-direction: column;       
+  justify-content: center;      
+  align-items: center;          
+  text-align: center;
+  height: 50vh;                 
+  background: rgba(0, 0, 0, 0.5);  
+  color: #ffdd57;              
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  margin: 50px auto;
+  max-width: 700px;            
+  font-family: "Poppins", sans-serif;
 }
 
-/* Hero Section */
-#home {
-    background-image:url(../imges/OIP.webp);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.welcome_head h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
 }
 
-.hero-text {
-    text-align: center;
-    margin-bottom: 100px;
+.welcome_head p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #ffe7a1;
+}
+/* end section home */
+
+/* start section about */
+#about{
+  padding: 50px 0px;
+  background-color: #f0f0f0;
 }
 
-.hero-text h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
+span{
+  display: block;
+  border-bottom: 5px solid red;
+  width: 80px;
+  transition: all 0.5s;
+}
+span:hover{
+  width: 150px;
+}
+.info{
+  display: flex;
+  justify-content: center;
+  gap:150px
+
+}
+.info_text{
+  width: 40%;
+}
+.info_text p{
+  margin-top: 10px;
+
+}
+ul{
+  list-style: none;
+  padding: 30px 0px
+}
+ul li{
+  margin: 20px 0px;
 }
 
-.hero-text p {
-    font-size: 20px;
-    color: #ccc;
+.image_info img{
+  width: 400px;
+  height: 400px;
+  border-radius: 5%;
+  object-fit: cover;
+}
+/* end section about */
+/* start section courses */
+#courses{
+  padding: 100px 0;
+  text-align: center;
+  background: #f8f8f8;
 }
 
-/* About Section */
-#about {
-  padding: 50px 30px;
-  background-color: #1e1e1e;
+ h2{
+  font-size: 40px;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+  color: #333;
 }
 
-#about h2 {
-  font-size: 28px;
-  color: #ff9800;
-  margin-bottom: 25px;
+
+.course{
+  background: white;
+  padding: 20px;
+  width: 260px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: transform .4s, box-shadow .4s;
+}
+
+.course:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.course img{
+  width: 100%;
+  height: 180px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  transition: transform .5s;
+}
+
+.course img:hover{
+  transform: scale(1.05);
+}
+
+.course a{
+  text-decoration: none;
+  color: #fff;
+  background: #6a5acd;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background .3s;
+}
+
+.course a:hover{
+  background: #483d8b;
+}
+/* end section courses */
+
+
+/*  start Hobbies Section */
+#hobbies {
+  background-color: bisque;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.hobby {
+  background: #fff;
+  padding: 20px;
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: transform .4s, box-shadow .4s;
+}
+
+.hobby:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.hobby img {
+  width: 100%;
+  height: 180px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  transition: transform .5s;
+}
+
+.hobby img:hover {
+  transform: scale(1.05);
+}
+
+.hobby p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* end section hobbies */
+
+/*  start Contact Section */
+#contact {
+  padding: 50px 0;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
   text-align: left;
 }
 
-.about-container {
-  display: grid;
-  grid-template-columns: 1fr 320px;
-  gap: 30px;
-  align-items: start;
+.contact-form label {
+  font-weight: bold;
+  display: block;
+  margin: 10px 0 5px;
 }
 
-.about-text {
-  font-size: 18px;
-  line-height: 1.7;
-  color: #fff;
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  font-size: 15px;
 }
 
-.about-text ul {
-  margin-top: 15px;
-  list-style: none;
-  padding-left: 0;
+.contact-form textarea {
+  resize: none;
 }
 
-.about-text ul li {
-  margin-bottom: 10px;
-  font-size: 17px;
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
 }
 
-.about-img {
-  display: flex;
-  justify-content: center;
-  align-items: start;
+.contact-form button:hover {
+  background-color: #555;
 }
-#courses {
-    padding: 60px 20px;
-    background: #2a2a2a;
-    text-align: center;
-}
-
-.course-container {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.course-card {
-    background: #333;
-    padding: 20px;
-    border-radius: 10px;
-    width: 250px;
-    text-align: center;
-}
-
-.course-card img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    transition: transform 0.3s ease;
-}
-
-.course-card img:hover {
-    transform: scale(1.05);
-}
-
-.course-card button {
-    background: #ff9800;
-    border: none;
-    padding: 10px 20px;
-    color: #fff;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.course-card button:hover {
-    background: #e68900;
-}
-
-/* Hobbies Section */
-#hobbies {
-    padding: 60px 20px;
-    background: #1e1e1e;
-    text-align: center;
-}
-
-.hobby-container {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.hobby-card {
-    background: #333;
-    padding: 20px;
-    border-radius: 10px;
-    width: 250px;
-    text-align: center;
-}
-
-.hobby-card img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-
-
-/* Contact Section */
-#contact {
-    padding: 60px 20px;
-    background: #1e1e1e;
-    text-align: center;
-}
-
-#contact h2 {
-    margin-bottom: 20px;
-    font-size: 28px;
-    color: #ff9800;
-}
-
-#contact form {
-    max-width: 500px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-#contact form input,
-#contact form textarea {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-#contact form textarea {
-    min-height: 120px;
-    resize: vertical;
-}
-
-#contact form button {
-    background: #ff9800;
-    border: none;
-    padding: 12px;
-    color: #fff;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#contact form button:hover {
-    background: #e68900;
-}
+/* end section contact */

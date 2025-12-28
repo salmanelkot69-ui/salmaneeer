@@ -1,104 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <!-- Navigation -->
+  <head>
+    <title>Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  </head>
+  <body>
+
+    <!-- Home Section with Navbar -->
     <section id="home">
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="hero-text">
-            <h1>WELCOME TO MY WEBSITE</h1>
-            <p>Discover my projects and skills as a Full Stack Developer</p>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="welcome_head">
+        <h1>Welcome to my website</h1>
+        <p>Discover my projects and skills as a Full Stack Developer</p>
+
+      </div>
+    </section>
+    
+    <!-- End section home -->
+
+    <!-- start section about  -->
+    <section id="about">
+      <div class="info">
+        <div class="info_text">
+          <header>
+            <h3 class="header_about">About Me</h3>
+            <span></span>
+          </header>
+          <p>
+            I am a 13-year-old Full Stack Developer, graduated from the Faculty
+            of Computers and Information with a Very Good grade. I am passionate
+            about building web applications and continuously learning new
+            technologies to enhance my skills.
+          </p>
+          <ul class="about-list">
+        <li> <i class="fa-solid fa-code-compare fa-fade"></i>
+          Strong knowledge in both Frontend & Backend development.</li>
+        <li> <i class="fa-solid fa-chalkboard-user fa-sm fa-fade"></i> Experienced in building responsive and dynamic websites.</li>
+        <li><i class="fa-solid fa-display fa-fade"></i></i>
+            Passionate about clean code and system architecture.</li>
+        <li>  <i class="fa-solid fa-user fa-fade"></i></i> Good communication skills and teamwork experience.</li>
+      </ul>
         </div>
+        <div class="image_info">
+          <img src="images/WhatsApp Image 2025-12-18 at 4.02.51 PM.jpeg" alt="" />
+        </div>
+      </div>
     </section>
 
-    <!-- About Me -->
-   <section id="about">
-  <h2>About Me</h2>
-  <div class="about-container">
-    <div class="about-text">
-      <p>I'm Marwan, 16 years old. I'm passionate about learning programming and I have good skills in it. 
-        I love playing football and enjoy weightlifting as a way to build strength and discipline. I'm eager to
-         improve my programming
-         abilities through platforms like El-Mohandes Academy, and I aspire to become a professional developer in the future.</p>
-      <ul>
-        <li>💻 Strong knowledge in both Frontend & Backend development.</li>
-<li>💬 Good communication skills and teamwork experience.</li>
-      </ul>        <li>🧠 Experienced in building responsive and dynamic websites.</li>
-        <li>🔥 Passionate about clean code and system architecture.</li>
-        
-    </div>
-    <div class="about-img">
-      <img src="imges/WhatsApp Image 2025-12-18 at 12.50.30 PM.jpeg" alt="About Me">
-    </div>
-  </div>
-</section>
-    <!-- Courses -->
+    <!-- end section about -->
+
+     <!-- start courses Section -->
     <section id="courses">
-        <h2>My Courses</h2>
-        <div class="course-container">
-            <div class="course-card">
-                <img src="imges/WhatsApp Image 2025-12-18 at 1.17.00 PM.jpeg" alt="Weather App">
-                <button>Show Preview</button>
-            </div>
-            <div class="course-card">
-                <img src="imges/WhatsApp Image 2025-12-18 at 1.22.02 PM.jpeg" alt="Earth Project">
-                <button>Show Preview</button>
-            </div>
-            <div class="course-card">
-                <img src="imges/WhatsApp Image 2025-12-18 at 1.18.54 PM.jpeg" alt="Education Project">
-                <button>Show Preview</button>
-            </div>
+      <h2>MY Courses</h2>
+      <div class="parent">
+        <div class="course">
+          <img src="images/weatherwebp.webp" alt="course" />
+           <p><a href="https://dina-dts.github.io/Weather-task/" target="_blank">Show Preview</a></p>
+    
         </div>
+        <div class="course">
+          <img src="images/space travel.jpg" alt="course" />
+          <p><a href="https://figma-project-9yibcg88d-dina-ahmeds-projects.vercel.app/" target="_blank">Show Preview</a></p>
+          
+        </div>
+        <div class="course">
+          <img src="images/ecommarce .jpg" alt="course" />
+           <p><a href="https://ecommarace-front-end-j8r3-bdy4trztv-dina-ahmeds-projects.vercel.app/" target="_blank">Show Preview</a></p>
+          
+          
+        </div>
+      </div>
     </section>
+    <!-- end section courses -->
 
-    <!-- Hobbies -->
+    <!-- start Hobbies Section -->
     <section id="hobbies">
-        <h2>My Hobbies</h2>
-        <div class="hobby-container">
-            <div class="hobby-card">
-                <img src="imges/WhatsApp Image 2025-12-18 at 1.29.22 PM.jpeg" alt="Programming">
-                <p>Choosing your first programming language</p>
-            </div>
-            <div class="hobby-card">
-                <img src="imges/WhatsApp Image 2025-12-18 at 1.29.22 PM (1).jpeg" alt="Football">
-                <p>Reading Books</p>
-            </div>
-            <div class="hobby-card">
-                <img src="imges/WhatsApp Image 2025-12-18 at 1.29.22 PM (2).jpeg" alt="Singing">
-                <p>Coding Projects</p>
-            </div>
+      <h2>MY Hobbies</h2>
+      <div class="parent">
+        <div class="hobby">
+          <img src="images/reading.png" alt="Reading" />
+          <p>Reading</p>
         </div>
+        <div class="hobby">
+          <img src="images/discovering.jpg" alt="Discovering" />
+          <p>Discovering</p>
+        </div>
+        <div class="hobby">
+          <img src="images/developer-coding-in-php.jpg" alt="Coding" />
+          <p>Coding</p>
+        </div>
+      </div>
     </section>
+    <!-- end section hobbies -->
 
-   
 
-    <!-- Contact -->
+    <!-- start section contact -->
+
     <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <label>Name</label>
-            <input type="text" placeholder="Enter your name" required>
-            
-            <label>Email</label>
-            <input type="email" placeholder="Enter your email" required>
-            
-            <label>Message</label>
-            <textarea placeholder="Write your message" required></textarea>
-            
-            <button type="submit">Submit</button>
-        </form>
+      <h2>Contact Me</h2>
+      <form class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          rows="5"
+          placeholder="Write your message"
+          required
+        ></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
     </section>
-</body>
+     <!-- end section contact -->
+  </body>
 </html>
